@@ -3,16 +3,16 @@
  -webkit-filter: grayscale(0%);     filter: grayscale(0%);
 opacity: 0.2;
 animation-name: animar_fondo;
-  animation-duration: 20s;
+  animation-duration: 5s;
 animation-timing-function: linear;
 animation-iteration-count: 1;
 animation-fill-mode: forwards;
 }
 .cont_img_back_grey {
   position: absolute;
-  width: 950px;
-top:10px;
-  left: 155px;
+  width: 940px;
+top:-10px;
+  left: 150px;
 }
 
 @-webkit-keyframes animar_fondo {
