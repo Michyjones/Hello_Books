@@ -1,0 +1,29 @@
+.cont_img_back_grey > img {
+  width: 100%;
+ -webkit-filter: grayscale(0%);     filter: grayscale(0%);
+opacity: 0.2;
+animation-name: animar_fondo;
+  animation-duration: 20s;
+animation-timing-function: linear;
+animation-iteration-count: 1;
+animation-fill-mode: forwards;
+}
+.cont_img_back_grey {
+  position: absolute;
+  width: 950px;
+top:10px;
+  left: 155px;
+}
+
+@-webkit-keyframes animar_fondo {
+  from { -webkit-transform: scale(1) translate(0px);
+-moz-transform: scale(1) translate(0px);
+-ms-transform: scale(1) translate(0px);
+-o-transform: scale(1) translate(0px);
+transform: scale(1) translate(0px); }
+  to { -webkit-transform: scale(1.5) translate(50px);
+-moz-transform: scale(1.5) translate(50px);
+-ms-transform: scale(1.5) translate(50px);
+-o-transform: scale(1.5) translate(50px);
+transform: scale(1.5) translate(50px); }
+}
