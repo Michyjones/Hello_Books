@@ -10,9 +10,9 @@ animation-fill-mode: forwards;
 }
 .cont_img_back_grey {
   position: absolute;
-  width: 940px;
+  width: 930px;
 top:-10px;
-  left: 150px;
+  left: 157px;
 }
 
 @-webkit-keyframes animar_fondo {

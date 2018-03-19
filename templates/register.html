@@ -11,17 +11,53 @@
 <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300'>
 <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto:400,700,300'>
 <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
       <link rel="stylesheet" href="sign-up.css">
       <link rel="stylesheet" href="image.css">
 
   
 </head>
-
+<div class="container" span style="font-size:20px">
 <body>
-  <div class="cont_img_back_grey">
-  <img src="library.jpg">
+  
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+         
+            <!-- Logo -->
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+                <a href="#" class="navbar-brand" >Hello_Books</a>
+            </div>
 
+            <!-- Menu Items -->
+            <div>
+                <div class="collapse navbar-collapse" id="mainNavBar">
+                <ul class="nav navbar-nav">
+                    <li class="#"><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <ul class=" nav navbar-nav navbar-right">
+                <li><a href="login.html">Login</a></li>
+              
+            </ul>
+
+            </div>
+
+        </div>
+        </div>
+    </nav>
+</div>
+  <!-- <div class="cont_img_back_grey">
+  <img src="library.jpg">
+ -->
   <div class="signup__container">
   <div class="container__child signup__thumbnail">
     <div class="thumbnail__logo">
@@ -47,7 +83,7 @@
       </div>
       <div class="form-group">
         <label for="password">Password</label>
-        <input class="form-control" type="password" name="password" id="password" placeholder="********" required />
+        <input class="form-control" type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"placeholder="********" required />
       </div>
       <div class="form-group">
         <label for="role">Role</label>
@@ -66,9 +102,11 @@
     </form>  
   </div>
 </div>
-  
-  
-
+ <footer>
+    <div class="footer-copyright py-3 text-center">
+        © 2018 Copyright:
+      </div>
+      </footer>
 </body>
 
 </html>
