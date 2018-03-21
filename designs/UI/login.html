@@ -3,18 +3,24 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Login</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hello_Books sign up form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.min.css'>
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <link rel="stylesheet" href="sign-up.css">
+    <link rel="stylesheet" href="image.css">
+
+
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-      <link rel="stylesheet" href="login.css">
-      <link rel="stylesheet" href="image.css">
-      <!-- <link rel="stylesheet" type="text/css" href="home.css"> -->
+
+
   
 </head>
- <div class ="container" span style="font-size:15px">
+<div class="container" span style="font-size:15px">
 <body>
+  
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
          
@@ -25,7 +31,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-                <a href="#" class="navbar-brand" span style="font-size:25px">Hello_Books</a>
+                <a href="#" class="navbar-brand" >Hello_Books</a>
             </div>
 
             <!-- Menu Items -->
@@ -34,17 +40,9 @@
                 <ul class="nav navbar-nav">
                     <li><a href="homepage.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><div class="dropdown">
-                         <button class="dropbtn">Contact</button>
-                             <div class="dropdown-content">
-                                 <a href="#">Github</a>
-                                  <a href="#">Twiter</a>
-                               <a href="#">facebook</a>
-                                   </div>
-                                    </div></li>
                 </ul>
                 <ul class=" nav navbar-nav navbar-right">
-                <li><a href="register.html">Sign Up</a></li>
+                <li><a href="register.html">Register</a></li>
               
             </ul>
 
@@ -53,47 +51,49 @@
         </div>
         </div>
     </nav>
- <!-- <div class="cont_img_back_grey">
-  <img src="library.jpg">
-
 </div>
- -->
-<body class="align">
-
-  <div class="grid">
-
-    <form id="login"  method="POST" class="form login">
-
-      <header class="login__header">
-        <h3 class="login__title">Login</h3>
-      </header>
-
-      <div class="login__body">
-
-        <div class="form__field">
-          <input type="email" name="email" id="email" placeholder="Email" required>
-        </div>
-
-        <div class="form__field">
-          <input type="password" name="password" id="password" placeholder="Password" required>
-        </div>
-
-      <footer class="login__footer">
-        <input type="submit"  value="Login">
-       <!-- <button class="btn_login" onclick="login"> </button>
- -->
-        <p><span class="icon icon--info">?</span><a href="#">Forgot Password</a></p>
-      </footer>
+  <div class="signup__container">
+  <div class="container__child signup__thumbnail">
+    <div class="thumbnail__logo">
+    
+      <h1 class="logo__text">Hello_Books</h1>
+    </div>
+    <div class="thumbnail__content text-center">
+      <h3 class="heading--primary">Welcome to Hello_Books.</h3>
+      <h3 class="heading--secondary">Create account to view catalogue</h3>
+    </div>
+    <div class="thumbnail__links">
+      <ul class="list-inline m-b-0 text-center">
+        <li><a href="https://github.com/Michyjones" target="_blank"><i class="fa fa-github"></i></a></li>
+      </ul>
+    </div>
+    <div class="signup__overlay"></div>
+  </div>
+  <div class="container__child signup__form">
+    <form id="signup" method='POST'>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input class="form-control" type="text" name="email" id="email" placeholder="michaelgitau@gmail.com" required />
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input class="form-control" type="password" name="password" id="password" placeholder="********" required />
       </div>
 
-    </form>
-
+      <div class="m-t-lg">
+        <ul class="list-inline">
+          <li>
+            <input class="btn btn--form" type="submit"  oncick="signUp()" value="Login" />
+          </li>
+          <li>
+            <a class="signup__link" href="register.html">Don't  have account. Register</a>
+          </li>
+        </ul>
+      </div>
+    </form>  
   </div>
 </div>
-</div>
-</body>
-</span>
-<footer class="footer">
+ <footer class="footer">
        <div class="col-xs-12 col-md-12 text-center" id="copyright">
         <img src="andela.png" height="30" width="30">Andela</br>
      Mikegee &copy;
@@ -104,5 +104,5 @@
     </div>
   </footer>
 </body>
-</div>
+
 </html>
