@@ -9,9 +9,10 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="admin_dashboard.css">
+  <link rel="stylesheet" type="text/css" href="home.css">
 
 </head>
-<div class="container" span style="font-size:20px">
+<div class="container" span style="font-size:15px">
 <body>
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -31,9 +32,16 @@
             <div>
                 <div class="collapse navbar-collapse" id="mainNavBar">
                 <ul class="nav navbar-nav">
-                    <li class="#"><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><div class="dropdown">
+                         <button class="dropbtn">Contact</button>
+                             <div class="dropdown-content">
+                                 <a href="#">Github</a>
+                                  <a href="#">Twiter</a>
+                               <a href="#">facebook</a>
+                                   </div>
+                                    </div></li>
                 </ul>
                 <ul class=" nav navbar-nav navbar-right">
                 <li><a href="register.html">Logout</a></li>
@@ -54,6 +62,7 @@
             <ul class="sidebar-nav">
                 <li><a href="#">Admin</a></li>
                 <li><a href="#">Update</a></li>
+                <li><a href="user_dashboard.html">Users</a></li>
                 <li><a href="#">Logout</a></li>
             </ul>
         </div>
@@ -87,12 +96,12 @@
                     <div class="modal-header">
                        
                       <button type="button" class="close" data-dismiss="modal">&times;</button>
-                       <h4 class="modal-title">Book</h4>
+                       <h4 class="modal-title" align="left">Book</h4>
                     </div>
                     <div class="modal-body">
                       <form  >
                         <div class="form-group">
-                         <label for="name" >Book name</label>
+                         <label for="name">Book name</label>
                          <input type="text" class="form-control" placeholder="Enter Book name" name="name">
                          <button type="button" class="btn btn-default" >Add</button>
                        </div>

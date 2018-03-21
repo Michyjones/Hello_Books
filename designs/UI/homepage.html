@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-      <link rel="stylesheet" href="login.css">
-      <link rel="stylesheet" href="image.css">
-  
-</head>
+      <link rel="stylesheet" type="text/css" href="home.css">
+      <!-- <link rel="stylesheet" href="home.css">
+   -->
+</head> 
+<div class="container">
  <div class ="container" span style="font-size:15px">
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-inverse">
         <div class="container-fluid">
          
             <!-- Logo -->
@@ -31,11 +32,19 @@
             <div>
                 <div class="collapse navbar-collapse" id="mainNavBar">
                 <ul class="nav navbar-nav">
-                    <li class="#"><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><div class="dropdown">
+                         <button class="dropbtn">Contact</button>
+                             <div class="dropdown-content">
+                                 <a href="#">Github</a>
+                                  <a href="#">Twiter</a>
+                               <a href="#">facebook</a>
+                                   </div>
+                                    </div></li>
                 </ul>
                 <ul class=" nav navbar-nav navbar-right">
+                    <li><a href="Login.html">Login</a></li>
                 <li><a href="register.html">Sign Up</a></li>
               
             </ul>
@@ -45,48 +54,22 @@
         </div>
         </div>
     </nav>
- <!-- <div class="cont_img_back_grey">
-  <img src="library.jpg">
+   
+<div class="jumbotron text-center">
+        <h2>Welcome to Hello_Books</h2>
+        <p  class="lead">Hello-Books is a simple application that helps manage a library and its processes like stocking, tracking and renting books. With this application users are able to find and rent books. </p>
+        <a href="register.html" class="btn btn-primary btn-lg">Register</a>
+        <a href="login.html" class="btn btn-success btn-lg">Login</a>
+    </div>
+    <h4 class="text-center">Create Account and Login To Access the resource Available In Hello Books </h4>
 
+        <div class="well text-center alert alert-success">Only Registered Users can Borrow Books</div>
+        
 </div>
- -->
-<body class="align">
-
-  <div class="grid">
-
-    <form id="login"  method="POST" class="form login">
-
-      <header class="login__header">
-        <h3 class="login__title">Login</h3>
-      </header>
-
-      <div class="login__body">
-
-        <div class="form__field">
-          <input type="email" name="email" id="email" placeholder="Email" required>
-        </div>
-
-        <div class="form__field">
-          <input type="password" name="password" id="password" placeholder="Password" required>
-        </div>
-
-      <footer class="login__footer">
-        <input type="submit"  value="Login">
-       <!-- <button class="btn_login" onclick="login"> </button>
- -->
-        <p><span class="icon icon--info">?</span><a href="#">Forgot Password</a></p>
-      </footer>
-      </div>
-
-    </form>
-
-  </div>
-</div>
-</div>
-</body>
-</span>
+<div class="container">
 <footer class="footer">
        <div class="col-xs-12 col-md-12 text-center" id="copyright">
+        <img src="andela.png" height="30" width="30">Andela</br>
      Mikegee &copy;
         <script>
          document.write(new Date().getFullYear());
@@ -94,6 +77,8 @@
       </div>
     </div>
   </footer>
+</div>
 </body>
+</div>
 </div>
 </html>
