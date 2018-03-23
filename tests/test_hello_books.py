@@ -6,7 +6,7 @@ class UserAuthentication(unittest.TestCase):
         """Initialises the tests"""
         self.client = run.app.test_client()
         db.create_all()
-        user = {"username": "rozzah", "password": "password"}
+        user = {"username": "michy", "password": "qwerty123"}
         userdata = json.dumps(user)
         self.client.post(
             "/v1/auth/register", data=userdata,
