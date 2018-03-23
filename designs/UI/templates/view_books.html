@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="static/image/home.css">
+</head> 
+    <div class="container">
+         <div class ="container" span style="font-size:15px">
+             <body>
+                <nav class="navbar navbar-inverse">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+                              <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                                <a href="#" class="navbar-brand" span style="font-size:25px">Hello_Books</a>
+                             </div>
+                                <div>
+                                    <div class="collapse navbar-collapse" id="mainNavBar">
+                                        <ul class="nav navbar-nav">
+                                            <li class="active"><a href="#">Home</a></li>
+                                            <li><a href="about.html">About</a></li>
+                                        </ul>
+                                        <ul class=" nav navbar-nav navbar-right">
+                                        <li><a href="">Log Out</a></li>                                   
+                                       </ul>
+                                     </div>
+                                 </div>
+                              </div>
+                            </nav>            
+                    <div class="container">
+                        <div class="row profile">
+                            <div class="col-md-3">
+                                <div class="profile-sidebar">
+                                    <div class="profile-userpic">
+                                        <img src="andela.png" class="img-responsive" alt="">
+                                    </div>
+                                      <div class="profile-usertitle">
+                                         <div class="profile-usertitle-name">
+                                            Mike Gitau
+                                         </div>
+                                         <div class="profile-usertitle-job">
+                                            Developer
+                                         </div>
+                                       </div>
+                                    <div class="profile-userbuttons">
+                                        <button type="button" class="btn btn-success btn-sm">Follow</button>
+                                        <button type="button" class="btn btn-danger btn-sm">Message</button>
+                                    </div>
+                                    <div class="profile-usermenu">
+                                        <ul class="nav">
+                                            <li class="active">
+                                                <a href="profile.html">
+                                                <i class="glyphicon glyphicon-book"></i>
+                                                View Borrowed Books</a>
+                                            </li>
+                                            <li>
+                                                <a href="history.html">
+                                                <i class="glyphicon glyphicon-globe"></i>
+                                                View History</a>
+                                            </li>
+                                           
+                                            <li>
+                                                <a href="#">
+                                                <i class="glyphicon glyphicon-flag"></i>
+                                                Help </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="profile-content">
+                                  <div class="row">
+                                    <div class="col-md-10 col-md-offset-1">
+                                      <div class="panel panel-default panel-table">
+                                        <div class="panel-heading">
+                                          <div class="row">
+                                            <div class="col col-md-10">
+                                              <h3 class="panel-title">Books catalogue</h3>
+                                            </div>
+                                      <div id="myModal" class="modal fade">
+                                        <div class="modal-dialog">
+                                           <div class="modal-content">
+                                             <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">Want to Borrow this Book</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h4>Happy Reading</h4>
+                                                <p>The Return Date Is 22nd March,2018</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                            <div class="btn-group">
+                                                <button class="btn btn-danger" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+                                                <button class="btn btn-primary"><span class="glyphicon glyphicon-check"></span> Save</button>
+                                            </div>
+                                        </div>
+                                     </div>
+                                 </div>
+                            </div>
+                         <div class="panel-table">
+                              <table class="table table-striped table-bordered table-list">
+                                <thead>
+                                  <tr>
+                                    <th></th>
+                                    <th>#</th> 
+                                    <th class="hidden-xs">Book ID</th>
+                                    <th>Book Name</th>
+                                    <th>Category</th>
+                                  </tr> 
+                                </thead>
+                                 <tbody >
+                                    <td align="center">
+                                      <a data-toggle="modal" href="#myModal" class="btn btn-primary">Borrow Book</em></a>
+                                    </td>
+                                    <td>1</td>
+                                    <td class="hidden-xs">01</td>
+                                    <td>Introduction to Computer Science</td>
+                                    <td >Engineering</td>
+                                  </tr>
+                                </tbody>
+                                 <tbody >
+                                    <td align="center">
+                                      <a data-toggle="modal" href="#reModal" class="btn btn-primary">Borrow Book</em></a>
+                                    </td>
+                                    <td>1</td>
+                                    <td class="hidden-xs">02</td>
+                                    <td>Digital Electronics</td>
+                                    <td >Engineering</td>
+                                  </tr>
+                                </tbody>
+                               <tbody >
+                                    <td align="center">
+                                      <a data-toggle="modal" href="#myModal" class="btn btn-primary">Borrow Book</em></a>
+                                    </td>
+                                    <td>1</td>
+                                    <td class="hidden-xs">03</td>
+                                    <td>Programming Basics</td>
+                                    <td >Software Development</td>
+                                  </tr>
+                                </tbody>
+                                <tbody >
+                                    <td align="center">
+                                      <a data-toggle="modal" href="#myModal" class="btn btn-primary">Borrow Book</em></a>
+                                    </td>
+                                    <td>1</td>
+                                    <td class="hidden-xs">04</td>
+                                    <td>Introduction to Flask</td>
+                                    <td >Software Development</td>
+                                  </tr>
+                                </tbody>
+                                <tbody >
+                                    <td align="center">
+                                      <a data-toggle="modal" href="#reModal" class="btn btn-primary">Borrow Book</em></a>
+                                    </td>
+                                    <td>1</td>
+                                    <td class="hidden-xs">05</td>
+                                    <td>Understanding Bootstrap</td>
+                                    <td >Software Development</td>
+                                  </tr>
+                                </tbody>
+                               <tbody >
+                                    <td align="center">
+                                      <a data-toggle="modal" href="#myModal" class="btn btn-primary">Borrow Book</em></a>
+                                    </td>
+                                    <td>1</td>
+                                    <td class="hidden-xs">06</td>
+                                    <td>Introduction to Python</td>
+                                    <td >Software Development</td>
+                                  </tr>
+                                </tbody>
+                                </table>
+                               </div>
+                             </div>
+                           </div>
+                        </div>
+                       </div>
+                     </div>
+                   </div>
+                </div>
+             </div>
+            </div>
+        </div>
+    </div>
+ </body>
+</html>
